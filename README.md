@@ -4,49 +4,49 @@ A collection of publicly accessible t-shirt design images hosted on GitHub Pages
 
 ## 🌐 Live Gallery
 
-Visit the gallery at: `https://[username].github.io/t-shirt-design/`
+Visit the gallery at: https://ashkan-deriv.github.io/t-shirt-design/
 
 ## 📦 Available Images
 
 All images are located in the `/images` directory and are publicly accessible:
 
 1. **dontdoit.jpeg**
-   - URL: `https://[username].github.io/t-shirt-design/images/dontdoit.jpeg`
+   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/dontdoit.jpeg`
 
 2. **Gemini_Generated_Image_hq1v54hq1v54hq1v.png**
-   - URL: `https://[username].github.io/t-shirt-design/images/Gemini_Generated_Image_hq1v54hq1v54hq1v.png`
+   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/Gemini_Generated_Image_hq1v54hq1v54hq1v.png`
 
 3. **Gemini_Generated_Image_mgm1emgm1emgm1em.png**
-   - URL: `https://[username].github.io/t-shirt-design/images/Gemini_Generated_Image_mgm1emgm1emgm1em.png`
+   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/Gemini_Generated_Image_mgm1emgm1emgm1em.png`
 
 4. **Gemini_Generated_Image_qxmlndqxmlndqxml.png**
-   - URL: `https://[username].github.io/t-shirt-design/images/Gemini_Generated_Image_qxmlndqxmlndqxml.png`
+   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/Gemini_Generated_Image_qxmlndqxmlndqxml.png`
 
 5. **Please Help It.png**
-   - URL: `https://[username].github.io/t-shirt-design/images/Please%20Help%20It.png`
+   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/Please%20Help%20It.png`
 
 ## 🚀 Usage
 
 ### HTML
 ```html
-<img src="https://[username].github.io/t-shirt-design/images/dontdoit.jpeg" alt="Design">
+<img src="https://ashkan-deriv.github.io/t-shirt-design/images/dontdoit.jpeg" alt="Design">
 ```
 
 ### CSS
 ```css
 .design {
-    background-image: url('https://[username].github.io/t-shirt-design/images/dontdoit.jpeg');
+    background-image: url('https://ashkan-deriv.github.io/t-shirt-design/images/dontdoit.jpeg');
 }
 ```
 
 ### Markdown
 ```markdown
-![Design](https://[username].github.io/t-shirt-design/images/dontdoit.jpeg)
+![Design](https://ashkan-deriv.github.io/t-shirt-design/images/dontdoit.jpeg)
 ```
 
 ### JavaScript
 ```javascript
-const imageUrl = 'https://[username].github.io/t-shirt-design/images/dontdoit.jpeg';
+const imageUrl = 'https://ashkan-deriv.github.io/t-shirt-design/images/dontdoit.jpeg';
 ```
 
 ## 📁 Project Structure
@@ -78,7 +78,7 @@ To view the gallery locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/[username]/t-shirt-design.git
+git clone https://github.com/ashkan-deriv/t-shirt-design.git
 
 # Navigate to the directory
 cd t-shirt-design
