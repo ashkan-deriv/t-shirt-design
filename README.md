@@ -10,43 +10,43 @@ Visit the gallery at: https://ashkan-deriv.github.io/t-shirt-design/
 
 All images are located in the `/images` directory and are publicly accessible:
 
-1. **dontdoit.jpeg**
-   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/dontdoit.jpeg`
+1. **t-shirt-design-1.jpeg**
+   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-1.jpeg`
 
-2. **Gemini_Generated_Image_hq1v54hq1v54hq1v.png**
-   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/Gemini_Generated_Image_hq1v54hq1v54hq1v.png`
+2. **t-shirt-design-2.png**
+   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-2.png`
 
-3. **Gemini_Generated_Image_mgm1emgm1emgm1em.png**
-   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/Gemini_Generated_Image_mgm1emgm1emgm1em.png`
+3. **t-shirt-design-3.png**
+   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-3.png`
 
-4. **Gemini_Generated_Image_qxmlndqxmlndqxml.png**
-   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/Gemini_Generated_Image_qxmlndqxmlndqxml.png`
+4. **t-shirt-design-4.png**
+   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-4.png`
 
-5. **Please Help It.png**
-   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/Please%20Help%20It.png`
+5. **t-shirt-design-5.png**
+   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-5.png`
 
 ## 🚀 Usage
 
 ### HTML
 ```html
-<img src="https://ashkan-deriv.github.io/t-shirt-design/images/dontdoit.jpeg" alt="Design">
+<img src="https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-1.jpeg" alt="Design">
 ```
 
 ### CSS
 ```css
 .design {
-    background-image: url('https://ashkan-deriv.github.io/t-shirt-design/images/dontdoit.jpeg');
+    background-image: url('https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-1.jpeg');
 }
 ```
 
 ### Markdown
 ```markdown
-![Design](https://ashkan-deriv.github.io/t-shirt-design/images/dontdoit.jpeg)
+![Design](https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-1.jpeg)
 ```
 
 ### JavaScript
 ```javascript
-const imageUrl = 'https://ashkan-deriv.github.io/t-shirt-design/images/dontdoit.jpeg';
+const imageUrl = 'https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-1.jpeg';
 ```
 
 ## 📁 Project Structure
@@ -54,11 +54,11 @@ const imageUrl = 'https://ashkan-deriv.github.io/t-shirt-design/images/dontdoit.
 ```
 t-shirt-design/
 ├── images/
-│   ├── dontdoit.jpeg
-│   ├── Gemini_Generated_Image_hq1v54hq1v54hq1v.png
-│   ├── Gemini_Generated_Image_mgm1emgm1emgm1em.png
-│   ├── Gemini_Generated_Image_qxmlndqxmlndqxml.png
-│   └── Please Help It.png
+│   ├── t-shirt-design-1.jpeg
+│   ├── t-shirt-design-2.png
+│   ├── t-shirt-design-3.png
+│   ├── t-shirt-design-4.png
+│   └── t-shirt-design-5.png
 ├── index.html
 └── README.md
 ```
