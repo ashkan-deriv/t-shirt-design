@@ -10,8 +10,8 @@ Visit the gallery at: https://ashkan-deriv.github.io/t-shirt-design/
 
 All images are located in the `/images` directory and are publicly accessible:
 
-1. **t-shirt-design-1.jpeg**
-   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-1.jpeg`
+1. **t-shirt-design-1.png**
+   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-1.png`
 
 2. **t-shirt-design-2.png**
    - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-2.png`
@@ -25,28 +25,40 @@ All images are located in the `/images` directory and are publicly accessible:
 5. **t-shirt-design-5.png**
    - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-5.png`
 
+6. **t-shirt-design-6.png**
+   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-6.png`
+
+7. **t-shirt-design-7.png**
+   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-7.png`
+
+8. **t-shirt-design-8.png**
+   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-8.png`
+
+9. **t-shirt-design-9.png**
+   - URL: `https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-9.png`
+
 ## 🚀 Usage
 
 ### HTML
 ```html
-<img src="https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-1.jpeg" alt="Design">
+<img src="https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-1.png" alt="Design">
 ```
 
 ### CSS
 ```css
 .design {
-    background-image: url('https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-1.jpeg');
+    background-image: url('https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-1.png');
 }
 ```
 
 ### Markdown
 ```markdown
-![Design](https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-1.jpeg)
+![Design](https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-1.png)
 ```
 
 ### JavaScript
 ```javascript
-const imageUrl = 'https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-1.jpeg';
+const imageUrl = 'https://ashkan-deriv.github.io/t-shirt-design/images/t-shirt-design-1.png';
 ```
 
 ## 📁 Project Structure
