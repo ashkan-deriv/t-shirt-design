@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Design Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .image-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        .image-wrapper {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .image-info {
+            padding: 20px;
+        }
+
+        .image-name {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+            word-break: break-word;
+        }
+
+        .url-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .url-input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 0.85em;
+            background: #f9f9f9;
+            font-family: monospace;
+        }
+
+        .copy-btn {
+            padding: 8px 16px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            background: #5568d3;
+        }
+
+        .copy-btn.copied {
+            background: #48bb78;
+        }
+
+        .instructions {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .instructions h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .instructions p {
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .instructions code {
+            background: #f5f5f5;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #d73a49;
+        }
+
+        .instructions pre {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        .instructions pre code {
+            background: none;
+            padding: 0;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 T-Shirt Design Gallery</h1>
+            <p class="subtitle">Publicly accessible design images for your projects</p>
+        </header>
+
+        <div class="gallery" id="gallery">
+            <!-- Images will be loaded here -->
+        </div>
+
+        <div class="instructions">
+            <h2>📖 How to Use These Images</h2>
+            <p>All images are publicly accessible and can be used in your websites, applications, or projects. Simply copy the URL and use it in your HTML or CSS.</p>
+            
+            <h3 style="margin-top: 20px; color: #333;">Example HTML:</h3>
+            <pre><code>&lt;img src="[IMAGE_URL]" alt="T-Shirt Design"&gt;</code></pre>
+
+            <h3 style="margin-top: 20px; color: #333;">Example CSS:</h3>
+            <pre><code>background-image: url('[IMAGE_URL]');</code></pre>
+
+            <h3 style="margin-top: 20px; color: #333;">Example Markdown:</h3>
+            <pre><code>![Design]([IMAGE_URL])</code></pre>
+        </div>
+    </div>
+
+    <script>
+        // List of images
+        const images = [
+            'dontdoit.jpeg',
+            'Gemini_Generated_Image_hq1v54hq1v54hq1v.png',
+            'Gemini_Generated_Image_mgm1emgm1emgm1em.png',
+            'Gemini_Generated_Image_qxmlndqxmlndqxml.png',
+            'Please Help It.png'
+        ];
+
+        // Get the base URL (will work for both local and GitHub Pages)
+        const baseUrl = window.location.origin + window.location.pathname.replace('index.html', '');
+
+        // Generate gallery
+        const gallery = document.getElementById('gallery');
+        
+        images.forEach(imageName => {
+            const imageUrl = `${baseUrl}images/${imageName}`;
+            
+            const card = document.createElement('div');
+            card.className = 'image-card';
+            
+            card.innerHTML = `
+                <div class="image-wrapper">
+                    <img src="images/${imageName}" alt="${imageName}" loading="lazy">
+                </div>
+                <div class="image-info">
+                    <div class="image-name">${imageName}</div>
+                    <div class="url-container">
+                        <input type="text" class="url-input" value="${imageUrl}" readonly>
+                        <button class="copy-btn" onclick="copyUrl(this, '${imageUrl}')">Copy</button>
+                    </div>
+                </div>
+            `;
+            
+            gallery.appendChild(card);
+        });
+
+        // Copy URL function
+        function copyUrl(button, url) {
+            navigator.clipboard.writeText(url).then(() => {
+                const originalText = button.textContent;
+                button.textContent = '✓ Copied!';
+                button.classList.add('copied');
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                alert('Failed to copy URL. Please copy manually.');
+            });
+        }
+    </script>
+</body>
+</html>
+
